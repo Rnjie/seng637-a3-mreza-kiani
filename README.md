@@ -2,4 +2,4 @@
 
 # Guidline
 - read [assignment guideline](Assignment3.md) 
-- commit and push output ([assignment output template](Assignment3-ReportTemplate.md))
+- commit and push output ([assignment output template](Assignment3-Report.md))

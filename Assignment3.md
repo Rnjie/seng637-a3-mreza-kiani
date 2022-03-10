@@ -230,7 +230,7 @@ The test suite will be required to be submitted along with the lab report. Stude
 
 ## 5.3 LAB REPORT (40%)
 
-Students will be required to submit a report on their work in the assignment as a group. To be consistent, please use the template markdown file ([Assignment3-ReportTemplate.md](Assignment3-ReportTemplate.md)) provided online under the Assignment 3 folder. If desired, feel free to rename the sections, as long as the headings are still descriptive and accurate. In the report should be included.
+Students will be required to submit a report on their work in the assignment as a group. To be consistent, please use the template markdown file ([Assignment3-ReportTemplate.md](Assignment3-Report.md)) provided online under the Assignment 3 folder. If desired, feel free to rename the sections, as long as the headings are still descriptive and accurate. In the report should be included.
 
 | Marking Scheme                                                                                                                                                                           |     |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |

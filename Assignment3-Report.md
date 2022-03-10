@@ -2,15 +2,20 @@
 
 **Lab. Report #3 – Code Coverage, Adequacy Criteria and Test Case Correlation**
 
-| Group \#:      |     |
-| -------------- | --- |
-| Student Names: |     |
-|                |     |
-|                |     |
-|                |     |
+| Group \#:              | 16  |
+|------------------------|-----|
+| Shahryar Soltanpour    |     |
+| Mohammad Reza Kianifar |     |
+| Muhammad Raihan        |     |
 
 (Note that some labs require individual reports while others require one report
 for each group. Please see each lab document for details.)
+
+# Link of demo video
+
+[Video Link](TODO://add-here-the-link-of-the-video)
+
+It works for everyone with logged-in university account on outlook. Please [tell us](mailto:mohammadreza.kianifa@ucalgary.ca) if you had any problem.
 
 # 1 Introduction
 
@@ -22,7 +27,11 @@ Text…
 
 # 3 A detailed description of the testing strategy for the new unit test
 
-Text…
+For reaching to more than 90% in line coverage, we wanted to do 2 things: 
+1. Add new test cases for previous methods that didn't have 100% line coverage.
+2. Add test cases for new methods to make them have 100% line coverage.
+
+
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 

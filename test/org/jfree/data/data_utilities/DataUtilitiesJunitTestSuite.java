@@ -9,7 +9,11 @@ import org.junit.runners.Suite;
         CalculateRowTotalTest.class,
         CreateNumberArrayTest.class,
         CreateNumberArray2DTest.class,
-        GetCumulativePercentagesTest.class
+        GetCumulativePercentagesTest.class,
+        CalculateColumnTotalValidRowsTest.class,
+        CalculateRowTotalValidColumnsTest.class,
+        CloneTest.class,
+        EqualTest.class
 })
 public class DataUtilitiesJunitTestSuite {
 }
