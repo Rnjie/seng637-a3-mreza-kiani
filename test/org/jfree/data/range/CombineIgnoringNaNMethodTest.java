@@ -50,10 +50,39 @@ public class CombineIgnoringNaNMethodTest {
     }
 
     @Test
+    public void aPartialNullCombinationPar2() {
+        Range r2 = new Range(-1, 0.5);
+        Range result = Range.combineIgnoringNaN(null, r2);
+        assertEquals(r2, result);
+    }
+
+    @Test
     public void aPartialNullCombination() {
         Range r1 = new Range(-1, 0.5);
         Range result = Range.combineIgnoringNaN(r1, null);
         assertEquals(r1, result);
+    }
+
+    @Test
+    public void aCombinationOfNullAndNaNValue() {
+        Range r2 = new Range(Double.NaN, Double.NaN);
+        Range result = Range.combineIgnoringNaN(null, r2);
+        assertNull(result);
+    }
+
+    @Test
+    public void aCombinationOfNaNValueAndNull() {
+        Range r1 = new Range(Double.NaN, Double.NaN);
+        Range result = Range.combineIgnoringNaN(r1, null);
+        assertNull(result);
+    }
+
+    @Test
+    public void aCombinationOfAllNaNValues() {
+        Range r1 = new Range(Double.NaN, Double.NaN);
+        Range r2 = new Range(Double.NaN, Double.NaN);
+        Range result = Range.combineIgnoringNaN(r1, r2);
+        assertNull(result);
     }
 
     @Test
@@ -65,11 +94,20 @@ public class CombineIgnoringNaNMethodTest {
     }
 
     @Test
-    public void aCombinationWithPartialNaNValue() {
+    public void aCombinationWithPartialUpperBondNaNValue() {
         Range r1 = new Range(-1, 0.5);
         Range r2 = new Range(-2, Double.NaN);
         Range result = Range.combineIgnoringNaN(r1, r2);
         Range expected = new Range(-2, 0.5);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void aCombinationWithUpperBondNaNValue() {
+        Range r1 = new Range(-1, Double.NaN);
+        Range r2 = new Range(-1, Double.NaN);
+        Range result = Range.combineIgnoringNaN(r1, r2);
+        Range expected = new Range(-1, Double.NaN);
         assertEquals(expected, result);
     }
 

@@ -9,7 +9,12 @@ import org.junit.runners.Suite;
         IntersectMethodTest.class,
         ExpandToIncludeTest.class,
         isNaNRangeTest.class,
-        ShiftTest.class
+        ShiftTest.class,
+        ConstrainTest.class,
+        CombineTest.class,
+        ConstructorTest.class,
+        ExpandTest.class,
+        ScaleTest.class
 })
 public class RangeJunitTestSuite {
 }

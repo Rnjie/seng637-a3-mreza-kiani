@@ -62,11 +62,8 @@ public class IntersectMethodTest {
         assertFalse("[null, null] has no intersection with [-1, +1]", range.intersects(Double.NaN, Double.NaN));
     }
 
-    @After
-    public void tearDown() {
-    }
-
-    @AfterClass
-    public static void tearDownAfterClass() {
+    @Test
+    public void alternativeIntersectsMethod() {
+        assertTrue("[-0.5, 0.5] has no intersection with [-1, +1]", range.intersects(new Range(-0.5, 0.5)));
     }
 }
