@@ -19,7 +19,20 @@ It works for everyone with logged-in university account on outlook. Please [tell
 
 # 1 Introduction
 
-Text…
+In this assignment we want to apply white-box testing for JFreeChart library. We want to work with coverage metrics, as
+a tool that helps us to a quality whit-bix testing. The JFreeChart is the library that we worked in the assignment 2, so
+we are familiar with its usage and two Range and DataUtilities classes. In this assignment we have a goal of reaching a 
+minimum of these coverage metrics for these 2 classes:
+* 90% statement coverage
+* 70% branch coverage
+* 60% condition coverage
+
+We couldn't find the condition coverage in IntelliJ built-in coverage tool and Eclipse EclEmma and JaCoCo plugins. So we
+decided to change this metric to a 90% method coverage instead. You can read more about this decision in part 6, pros/cons.
+
+We also manually measure data flow coverage of two methods that we wrote test cases for them to acquire a deeper understanding of the concept.
+
+At the end, we could reach a high coverage numbers for these 2 classes which was beyond our goal.
 
 # 2 Manual data-flow coverage calculations for X and Y methods
 
