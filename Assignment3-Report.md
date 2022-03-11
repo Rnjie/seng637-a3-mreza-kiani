@@ -107,16 +107,26 @@ Pros of method coverage:
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
-Text…
+* In the coverage-based testing, tester should have the source code of the software, while in the requirements-based testing, a running instance of the compiled software will suffice.
+* Some aspects of requirements-based testing do not need programming knowledge but coverage-based testing does. 
+* In coverage-based testing, we can't find a missing functionality in the requirements. 
+* In requirement-based testing, we may not be able to enter some branches that cause the program to crash.
+* In requirement-based testing, you may be able to write tests for the black-box code using any languages. But in coverage-based testing, you should know the language that the source code is written with. 
+* Requirement-based testing is more about users and product managers point of view, while coverage-based testing is more related to developer's point of view.
+* If our problem domain contains a very complex logic, the coverage test may not be able to discover it because it does not care about requirements and domain-specific problems.
+* If a requirement-based test fails, you may need to put some time to trace the bug to find where it exactly fails in the code, while this process is relatively easier in the coverage-based testing.
+* While doing coverage-based testing, you may find some if's and loops that are never executed, so you can remove them from the code so it makes the code simpler.
+
 
 # 8 A discussion on how the team work/effort was divided and managed
 
-Text…
+All of us have set up the coverage tool on our machines. Ammaar was mainly responsible for data-flow coverage. Mohammad Reza was mainly responsible for writing tests for Range class and Shahryar did the same for DataUtilities class. Each person reviewed the two other works carefully after finishing his work. Finally, we've divided various parts of the report between ourselves and again, reviewed the parts written by the other ones before merging them into the final report.
+Our communication tool was Discord.
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
-Text…
+Like previous assignments, the main difficulty is that we can hardly find a time to be in the university in-person, so we should have online meetings and develop remotely. We did this by communicating on Discord by text or having short meetings to discuss the assignment, divide the tasks, and review our work. 
 
 # 10 Comments/feedback on the lab itself
 
-Text…
+This lab was very helpful and gave us the opportunity to get to know modern tools in calculating test coverage and being familiar with white-box testing concepts. Instructions were step-by-step and detailed so we did not face any ambiguity during the setup and testing phase.
