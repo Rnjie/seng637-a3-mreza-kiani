@@ -56,8 +56,11 @@ We have added some new test cases for Range and DateUtilities class to increase 
 ![img_1.png](media/equal_testcases.png)
 
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
+The first figure shows the coverage stats for the two classes before writing tests of this phase: 
+![](media/before-coverage-tests.png)
 
-Text…
+The following figure shows code coverage stats for each tested class after completing this phase tests. Unfortunately, our coverage tool did not generate stats for each method, but you can see the green and red coverage lines for each class when you click on the class name in this [HTML generated file](./coverage-report/index.html). 
+![](media/coverate-report.png)
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
