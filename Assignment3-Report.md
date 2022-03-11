@@ -54,13 +54,51 @@ for 100% line and branch coverage. We followed this technique to reach more than
 
 We have added some new test cases for Range and DateUtilities class to increase our line, method and branch coverage. There were 4 out of 9 methods in DateUtilities class that were not tested in the previous assignment. One of them is the 'equal' method that checks if two given double[] arguments are equal or not. Here is a description of test cases written for this method:
 ![img_1.png](media/equal_testcases.png)
+
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 
 Text…
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
-Text…
+We used IntelliJ built-in coverage tool for extracting coverage information. After we set it up, we saw that it doesn't 
+have branch and condition coverages. After searching for the solution, we find a technique that IntelliJ tool could give
+us branch coverage, but still we didn't have condition coverage. So we switched to Eclipse IDE and used EclEmma plugin
+for coverage. Again, the result was same and this tool also didn't show us condition coverage. After that, we decided to 
+return to IntelliJ IDE since our team has more experience in working with that, and we used method coverage metric instead.
+
+The pros of using the coverage tools are:
+1. Trying to find uncovered statements/branches. So it helps you to provide new tests that are both necessary and more effective.
+2. By trying to reach 100% statement/branches coverage, it's possible that you find new bugs in the code. As we find a new bug in Range class for CombineIgnoringNaN method. When we tried to combine to range with upper bound NaN values, the result wasn't as we expected. (You can see [aCombinationWithUpperBondNaNValue test CombineIgnoringNaNMethodTest file](./test/org/jfree/data/range/CombineIgnoringNaNMethodTest.java) for more information)
+3. By trying to reach 100% statement/branches coverage, you may find some lines that are infeasible to reach. So, it helps you to refactor your code by removing those lines.
+4. These coverage tools can produce high level reports in different formats like HTML that can help you to see your testing performance.
+5. These are built-in tools in the IDE, so there is no need for you to install new software.
+
+The cons of using the coverage tools:
+1. It may take a while from you to set up the tool and extract required metrics from that. Especially, if it's your first time. But after that, you can work with them in a more straightforward manner.
+2. The IntelliJ built-in coverage plugin, EclEmma, and JaCoCo tools doesn't have Condition Coverage metric.
+3. You may end up with some dummy test cases only to reach 100% coverage, like testing getters/setters.
+
+We used 3 metrics for our coverage report: Statement Coverage, Branch Coverage, and Method Coverage. Although, what we said earlier is also true for these metrics, but if we want to speak individually, we can say:
+
+Pros of statement coverage:
+1. It helps you to detect the statements that have been already covered or vice-versa. So you can easily detect what new test cases are necessary.
+2. You can detect unreachable statements, and perform refactor.
+3. This metric ensures all the statements actually perform the task that they should ideally be performing by checking each line of the code.
+
+Cons of statement coverage:
+1. It doesn't show you information about conditions. So, you can not sure what terms are covered.
+2. This is also true for loop ending condition. This metric doesn't show if that has actually happened or not.
+
+Pros of branch coverage:
+1. The branches are the things that makes your code more complicated since they don't follow a simple path anymore, and you are dealing with a tree. This metric helps you to make sure you've reached every node of that tree with your testcases.
+2. This metric helps to measure which decision outcomes have been tested and which not.
+
+Cons of branch coverage:
+1. In some conditions, you may have more than one term combined with &&/||/!. So it's complicated to figure our have you covered all of them or not. Although, IntelliJ has a tool that can show you number of hits per term and that helped us.
+
+Pros of method coverage:
+1. Gives you an abstract view about how many methods have you covered with your test cases.
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
