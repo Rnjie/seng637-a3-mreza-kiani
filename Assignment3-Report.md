@@ -133,7 +133,7 @@ Pros of method coverage:
 
 # 8 A discussion on how the team work/effort was divided and managed
 
-All of us have set up the coverage tool on our machines. Ammaar was mainly responsible for data-flow coverage. Mohammad Reza was mainly responsible for writing tests for Range class and Shahryar did the same for DataUtilities class. Each person reviewed the two other works carefully after finishing his work. Finally, we've divided various parts of the report between ourselves and again, reviewed the parts written by the other ones before merging them into the final report.
+All of us have set up the coverage tool on our machines. Ammaar was mainly responsible for data-flow coverage. Mohammad Reza was mainly responsible for writing tests for Range class and Shahryar did the same for DataUtilities class. Each person reviewed the two other works carefully and fixed them if necessary after finishing his work. Finally, we've divided various parts of the report between ourselves and again, reviewed the parts written by the other ones before merging them into the final report.
 Our communication tool was Discord.
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
