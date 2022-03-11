@@ -61,6 +61,8 @@ The first figure shows the coverage stats for the two classes before writing tes
 The following figure shows code coverage stats for each tested class after completing this phase tests. Unfortunately, our coverage tool did not generate stats for each method, but you can see the green and red coverage lines for each class when you click on the class name in this [HTML generated file](./coverage-report/index.html). 
 ![](media/coverate-report.png)
 
+Here's a sample of the generated method coverage in the html report file:
+![](media/report-sample.png)
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
 Text…
