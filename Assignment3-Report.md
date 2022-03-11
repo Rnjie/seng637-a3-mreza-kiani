@@ -31,7 +31,24 @@ For reaching to more than 90% in line coverage, we wanted to do 2 things:
 1. Add new test cases for previous methods that didn't have 100% line coverage.
 2. Add test cases for new methods to make them have 100% line coverage.
 
+The approach is the same. We used the IntelliJ coverage tool that can show us the covered lines or branches within the 
+number of hits they had. For each method, we saw the coverage hit map and then tried to add new test cases to cover all 
+available lines. For conditions, we also tried to generate all possible cases of each term in that condition. The figure
+bellow, shows an example of a previously covered method by black-box testing:
 
+![Figure 1: An example of non-covered method](media/coverage-example.png)
+
+We can see 3 types of color for each line:
+1. <span style="color:green">Green</span>: Fully covered statement
+2. <span style="color:red">Red</span>: Unreached statement
+3. <span style="color:yellow">Yellow</span>: Partially covered condition. This happens when the condition has been true,
+and only been passed.
+
+So to make 100% line and branch coverage for this method, we added a new testCase with <i>lower > upper</i>.
+
+By extracting the available branch for each method, and try to make the condition both true and false, we are able to go
+for 100% line and branch coverage. We followed this technique to reach more than 90% of line coverage for both 
+<i>Range</i> and <i>DataUtilities</i> classes.
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
