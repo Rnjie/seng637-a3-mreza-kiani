@@ -13,7 +13,7 @@ for each group. Please see each lab document for details.)
 
 # Link of demo video
 
-[Video Link](TODO://add-here-the-link-of-the-video)
+[Video Link](https://uofc-my.sharepoint.com/:v:/g/personal/shahryar_soltanpour_ucalgary_ca/EWz4NgkMCTNFv_-jKADsNfIBJvoJyyQLyO2rLR4XnyiMqg?e=olTzhY)
 
 It works for everyone with logged-in university account on outlook. Please [tell us](mailto:mohammadreza.kianifa@ucalgary.ca) if you had any problem.
 
