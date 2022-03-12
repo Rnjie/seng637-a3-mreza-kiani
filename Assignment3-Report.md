@@ -36,7 +36,58 @@ In the end, we could reach high coverage numbers for these 2 classes which were 
 
 # 2 Manual data-flow coverage calculations for X and Y methods
 
-Text…
+The 2 methods explored were DataUtilities.calculateColumnTotal and Range.expandToInclude.
+
+### ExpandToInclude
+
+#### Code
+![ExpandToInclude Code](media/range-code.png)
+
+
+#### Graph
+![ExpandToInclude Graph](media/range-graph.png)
+
+
+#### Def-Use sets per statement
+![ExpandToInclude sets](media/range-statement.png)
+
+
+#### DU-pairs per variable
+![ExpandToInclude pairs](media/range-pairs.png)
+
+
+#### Test case DU-pair coverage
+![ExpandToInclude coverage](media/range-coverage.png)
+
+
+#### DU-pair coverage calculation
+![ExpandToInclude calculation](media/range-calc.png)
+
+
+### CalculateColumnTotal
+
+#### Code
+![CalculateColumnTotal Code](media/column-code.png)
+
+
+#### Graph
+![CalculateColumnTotal Graph](media/column-graph.png)
+
+
+#### Def-Use sets per statement
+![CalculateColumnTotal sets](media/column-statement.png)
+
+
+#### DU-pairs per variable
+![CalculateColumnTotal pairs](media/column-pairs.png)
+
+
+#### Test case DU-pair coverage
+![CalculateColumnTotal coverage](media/column-coverage.png)
+
+
+#### DU-pair coverage calculation
+![CalculateColumnTotal calculation](media/column-calc.png)
 
 # 3 A detailed description of the testing strategy for the new unit test
 
